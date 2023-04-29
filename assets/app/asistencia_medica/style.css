@@ -1,0 +1,72 @@
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+section, article, .container_all_conversation {
+    width: 100%;
+    height: 100%;
+}
+
+.container_name_doc {
+    width: 100%;
+    height: 5rem;
+}
+
+.logo_name_doc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: .8rem 1rem;
+    gap: 1rem;
+
+    box-shadow: -3px 1px 14px -2px gray;
+
+    position: relative;
+}
+
+.img_logo_doc {
+    width: 50px;
+    height: 50px;
+    background-color: #efefefef;
+
+    border-radius: 3rem;
+}
+
+.name_doc {
+    /* background-color: green; */
+    /* display: flex; */
+    width: min-content;
+    height: min-content;
+    
+}
+
+#name_doc {
+    font-size: 1.3rem;
+}
+
+#id_doc {
+    font-size: .8rem;
+}
+
+#reporter_doc {
+    width: 50px;
+    height: 50px;
+
+    /* box-shadow: 0px 0px 13px -5px gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    font-size: 1.5rem;
+
+    /* ESTO DEBE ESTAR ANIMADO CON JS */
+
+    right: 3%;
+
+
+
+}

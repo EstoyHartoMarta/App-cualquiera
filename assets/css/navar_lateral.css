@@ -10,14 +10,14 @@
     
     z-index: 2;
     bottom: 12vh;
-    right: 6%;
+    right: 2rem;
 
     background-color: #fdfafa;
     /* text-align: center; */
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-items: center * /
+    justify-items: center;
     font-size: 1.2rem;
     /* box-shadow: .2rem .2em 1px black; */
     
