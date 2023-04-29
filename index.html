@@ -1,38 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>CodePen - Navigation</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
-    />
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
 
-    <!-- NORMALIZE -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
+<head>
+  <meta charset="UTF-8" />
+  <title>CodePen - Navigation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- NAVAR -->
-    <script src="assets/js/navar.js"></script>
-    <link rel="stylesheet" href="assets/css/navar.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="./style.css" /> -->
+
+  <!-- NORMALIZE -->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+
+  <!-- NAVAR -->
+  <script src="assets/js/navar.js"></script>
+  <link rel="stylesheet" href="assets/css/navar_bottom.css">
+  <link rel="stylesheet" href="assets/css/navar_lateral.css">
+
+  <!-- FONT AWENSOME -->
+  <script src="https://kit.fontawesome.com/9952762090.js" crossorigin="anonymous"></script>
 
 
-  </head>
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <html>
+
   <body>
-    <!-- partial:index.partial.html -->
-    <html>
-      <head>
-        <meta charset="utf-8" />
-        <title></title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
-      <body>
-        <div>askdjfasldkf</div>
+    <header></header>
+    <main>
 
-        <!-- NAVAR -->
+      <div>askdjfasldkf</div>
+
+      <section class="bottom_navar">
+        <!-- NAVAR SUPUESTAMENTE LATERAL -->
+        <div class="container_nav_lateral">
+          <div>
+            <ul>
+              <li class="buttons_selection"><i class="fa-solid fa-gear"></i></li>
+              <!-- <li class="buttons_selection"></li> -->
+              <li class="buttons_selection"><i class="fa-solid fa-shield-heart"></i></i></li>
+              <li class="buttons_selection"><i class="fa-solid fa-user-doctor"></i></li>
+              <li class="buttons_selection"><i class="fa-solid fa-gear"></i></li>
+              <!-- <li class="buttons_selection"></li> -->
+              <li class="buttons_selection"><i class="fa-solid fa-shield-heart"></i></i></li>
+              <li class="buttons_selection"><i class="fa-solid fa-user-doctor"></i></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div id="bubble_add" onclick="despliegue_nav_lateral">
+          <span id="icon_plus"><i class="fa-solid fa-plus clase"></i></span>
+        </div>
+
+
+
+
         <div id="navbarContainer">
+
           <div id="navbar">
+
             <div id="bubbleWrapper">
+
               <div id="bubble1" class="bubble">
                 <span class="icon"><i class="fas fa-home"></i></span>
               </div>
@@ -47,32 +79,16 @@
               </div>
             </div>
             <div id="menuWrapper">
-              <div
-                id="menu1"
-                class="menuElement"
-                onclick="move('1', '10vw', '#ffcc80')"
-              >
+              <div id="menu1" class="menuElement" onclick="move('1', '12.5vw', '#ffcc80')">
                 <i class="fas fa-home"></i>
               </div>
-              <div
-                id="menu2"
-                class="menuElement"
-                onclick="move('2', '37.5vw', '#81d4fa')"
-              >
+              <div id="menu2" class="menuElement" onclick="move('2', '37.5vw', '#81d4fa')">
                 <i class="fab fa-twitter"></i>
               </div>
-              <div
-                id="menu3"
-                class="menuElement"
-                onclick="move('3', '62.5vw', '#c5e1a5')"
-              >
+              <div id="menu3" class="menuElement" onclick="move('3', '62.5vw', '#c5e1a5')">
                 <i class="fas fa-bell"></i>
               </div>
-              <div
-                id="menu4"
-                class="menuElement"
-                onclick="move('4', '87.5vw', '#ce93d8')"
-              >
+              <div id="menu4" class="menuElement" onclick="move('4', '87.5vw', '#ce93d8')">
                 <i class="fas fa-user"></i>
               </div>
             </div>
@@ -86,26 +102,24 @@
         <svg width="0" height="0">
           <defs>
             <filter id="goo">
-              <feGaussianBlur
-                in="SourceGraphic"
-                stdDeviation="20"
-                result="blur"
-                id="blurFilter"
-              />
-              <feColorMatrix
-                in="blur"
-                mode="matrix"
-                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 30 -15"
-                result="goo"
-              />
+              <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur" id="blurFilter" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 30 -15"
+                result="goo" />
               <feComposite in="SourceGraphic" in2="goo" operator="atop" />
             </filter>
           </defs>
         </svg>
-      </body>
-    </html>
-    <!-- partial -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
-    <script src="./script.js"></script>
+      </section><!-- NAVAR -->
+
+
+    </main>
+    <footer></footer>
   </body>
+
+  </html>
+  <!-- partial -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
 </html>

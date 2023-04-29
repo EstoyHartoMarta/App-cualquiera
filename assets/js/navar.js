@@ -16,4 +16,7 @@ function move(id, position, color) {
       .to("#bgBubble", {duration: 0.3, backgroundColor: color, ease: "ease-in-out"}, 0)
   }
 
+  function despliegue_nav_lateral(){
+    
+  }
 

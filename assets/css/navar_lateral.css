@@ -1,0 +1,83 @@
+/* BUTTON + */
+#bubble_add {
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 100%;
+    border: 5px black solid;
+    
+    z-index: 2;
+    bottom: 12vh;
+    right: 6%;
+
+    background-color: #fdfafa;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center * /
+    font-size: 1.2rem;
+    /* box-shadow: .2rem .2em 1px black; */
+    
+}
+
+.clase, #icon_plus{
+    /* font: ; */
+    font: 30rem;
+    font-weight: 900;
+}
+
+#icon_plus {
+    opacity: 0.5;       
+}
+
+
+/* CONTENEDOR DE LOS SELECTORES */
+.container_nav_lateral {
+    position: absolute;
+    right: 0rem;
+    bottom: 10%; 
+    width: 100%;
+    /* border-radius: .5rem; */
+    background-color: #e2e2e2;
+}
+
+.container_nav_lateral div {
+    display: flex;
+    padding: 2px 1rem;
+    justify-content: center;
+}
+
+.container_nav_lateral ul{
+    width: 80%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container_nav_lateral ul li {
+    margin: 1rem;
+    display: flex;
+}
+
+.buttons_selection {
+    margin-bottom: .5rem;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-size: 1.2rem;
+}
+
+.buttons_selection i {
+    opacity: .7;
+}
+
