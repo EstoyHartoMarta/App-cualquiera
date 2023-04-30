@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Navigation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+
+    <!-- NORMALIZE -->
+    <link rel="stylesheet" href="../../css/normalize.css">
+
+    <!-- NAVAR -->
+    <script src="../../js/navar.js"></script>
+    <link rel="stylesheet" href="../../css/navar_bottom.css">
+    <!-- <link rel="stylesheet" href="../../css/navar_lateral.css"> -->
+
+    <!-- FONT AWENSOME -->
+    <script src="https://kit.fontawesome.com/9952762090.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+
+    <main>
+        <header>
+
+        </header>
+
+        <section class="section_info">
+
+
+            <article class="article_info_user">
+                <div class="name_user">
+                    <div class="foto_user">
+                        <img src="../../img/card_asistencia/img_motivational/img_foto/source355x388_co.jp alt="#">
+                    </div>
+    
+                    <div class="info_basica_user">
+                        <div>Marta Rodriguez</div>
+                        <span>Paciente Depresiva :v</span>
+                    </div>
+                </div>
+            </article>
+
+
+
+            <article class="article_agenda">
+
+                <div class="container_citas_agenda" id="citas_agenda">
+
+                    <div class="cita_agenda">
+                        <div class="container_img_agenda">
+                            <img src="../../img/TaeAugust07.jpg">
+                        </div>
+                        <div class="info_name_paciente_agenda">
+                            <div class="name_user_agenda"><b>Josefina R.</b> - <span class="negrita">Cita depre</span></div>
+                        </div>
+                        <div class="info_date_cita_agenda">
+                            <span>Jueves 11 jun</span>
+                            <span>9:00 pm</span>
+                        </div>
+                    </div>
+                    <div class="cita_agenda">
+                        <div class="container_img_agenda">
+                            <img src="../../img/TaeAugust07.jpg">
+                        </div>
+                        <div class="info_name_paciente_agenda">
+                            <div class="name_user_agenda"><b>Josefina R.</b> - <span class="negrita">Cita depre</span></div>
+                        </div>
+                        <div class="info_date_cita_agenda">
+                            <span>Jueves 11 jun</span>
+                            <span>9:00 pm</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </article>
+
+
+
+            <article class="article_consejos">
+                <div class="container_consejos">
+                    <div class="container_img_consejos" id="consejos">
+                        <div class="img">
+                            <img src="../../img/card_asistencia/img_motivational/frases-inspiradoras-motivacionales-motivacion-cortas-para-instagram-blog-de-psicologia-neurita-3.jpg" alt="">
+                        </div>
+                        <div class="img">
+                            <img src="../../img/card_asistencia/img_motivational/Mahatma-Gandhi-Nadie-me-puede-hacer-dano-sin-mi-permiso-1-1024x576.jpg" alt="">
+                        </div>
+                        <div class="img">
+                            <img src="../../img/card_asistencia/img_motivational/Marco-Aurelio-La-mejor-venganza-es-ser-diferente-de-quien-te-causo-el-dano-1-1024x576.jpg" alt="">
+                        </div>
+                        <div class="img">
+                            <img src="../../img/card_asistencia/img_motivational/Socrates-El-secreto-del-cambio-es-centrar-toda-tu-energia-no-en-luchar-contra-lo-viejo-sino-en-construir-lo-nuevo-1-768x432.jpg" alt="">
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </article>
+
+
+        </section>
+
+        <section class="bottom_navar">
+
+            <div id="bubble_add" onclick="despliegue_nav_lateral">
+                <!-- <span id="icon_plus"><i class="fa-solid fa-plus clase"></i></span> -->
+            </div>
+
+
+
+
+            <div id="navbarContainer">
+
+                <div id="navbar">
+
+                    <div id="bubbleWrapper">
+
+                        <div id="bubble1" class="bubble">
+                            <span class="icon"><i class="fas fa-home"></i></span>
+                        </div>
+                        <div id="bubble2" class="bubble">
+                            <span class="icon"><i class="fab fa-twitter"></i></span>
+                        </div>
+                        <div id="bubble3" class="bubble">
+                            <span class="icon"><i class="fas fa-bell"></i></span>
+                        </div>
+                        <div id="bubble4" class="bubble">
+                            <span class="icon"><i class="fas fa-user"></i></span>
+                        </div>
+                    </div>
+                    <div id="menuWrapper">
+                        <div id="menu1" class="menuElement" onclick="move('1', '12.5vw', '#ffcc80')">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div id="menu2" class="menuElement" onclick="move('2', '37.5vw', '#81d4fa')">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div id="menu3" class="menuElement" onclick="move('3', '62.5vw', '#c5e1a5')">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <div id="menu4" class="menuElement" onclick="move('4', '87.5vw', '#ce93d8')">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="bgWrapper">
+                    <div id="bg"></div>
+                    <div id="bgBubble"></div>
+                </div>
+            </div>
+
+            <svg width="0" height="0">
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur" id="blurFilter" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 30 -15"
+                            result="goo" />
+                        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                    </filter>
+                </defs>
+            </svg>
+        </section><!-- NAVAR -->
+
+
+    </main>
+    <footer></footer>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+</body>
+
+</html>
